@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora 1</title>
+    <link rel="stylesheet" href="css/estilos_bitacora1.css">
+
+    <!--Inicio Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Rowdies:wght@300;400;700&family=Sono:wght@200..800&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <!--Cierre Fuente-->
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="JavaScript">JavaScript Conceptos basicos</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Para usar una funcion debe <br> declararla en algun lugar y se ejecuta cuando algo la llama
+                        </li> <br>
+                        <li>El codigo dentro de la funcion se ejecutara cuando algo invoque o llame a la funcion</li>
+
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        La sintaxis de una funcion es Function nombre([param]). El codigo dentro de la funcion se
+                        ejecutara cuando
+                        algo invoque o llame a la funcion: <br>
+                    <ul>
+                        <li>Cuando ocurre un evento (cuando un usuario ace click a un boton)&#60;button type="button"
+                            onclick="miFuncion"&#62;Texto&#60;button</li>
+                        <li>Cuando se invoca desde el codigo de JavaScript Document.getElementById("demo").innerHTML="La
+                            temperatura es + toCelsius(77)+ "Celsius</li>
+                        <li>Automaticamente: function myFunction(p1,p2){<br>
+                            return p1*p2}</li>
+                    </ul>
+                    <b><ins>Tipos de datos</ins></b> <br>
+                    <ul>
+                        <li><b><ins>String:</ins></b> Un valor de cadena esta formado por una cadena de cero o mas
+                            caracteres Unicode. El tipo de datos string se usa para representar texto en JavaScript</li>
+                        <li><b><ins>Numero:</ins></b> En Java, no se distingue entre los valores enteros y punto
+                            flotante; un numero de Java puede ser cualquiera de ellos</li>
+                        <li><b><ins>Boolean:</ins></b> Este tipo de datos solo puede tener dos valores, true o false
+                        </li>
+                        <li><b><ins>Eventos:</ins></b> Un evento HTML puede ser algo que hace el navegador, o algo que
+                            hace un usuario. JavaScript puede reaccionar en estos eventos</li>
+                    </ul>
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/JavaScript.png"><img src="imagenes/JavaScript.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>JavaScript nos permite usar funciones al llamarlas en HTML, la sintaxis de las funciones son:
+                    Function nombre([param]). <br>
+                    El codigo de la funcino solo se ejecutara cuando "algo" invoque o llame a la funcion: <br>
+                <ul>
+                    <li>Puede ser un boton, la sintaxis es asi: &#60;button type="button"
+                        onclick="miFuncion"&#62;ClickAqui&#60;/button&#62;</li>
+                    <li>Se puede invocar desde el script de la siguiente manera:
+                        Document.getElementById("demo").innerHTML="La tempreatura es +toCelsius(77)+"Celsius"</li>
+                    <li>De manera automaticamente, la sintaxis es la siguiente: "function myFunction(p1,p2){ return
+                        p1*p2}</li>
+                </ul>
+                <br>
+                <b><ins>Tipos de datos</ins></b> <br>
+                <ul>
+                    <li><b><ins>String:</ins></b> Las cadenas pueden tener 0 o mas caracteres. Se usa para representar
+                        texto en Java</li>
+                    <li><b><ins>Numero:</ins></b> En Java no se diferencian entre enteros y puntos flotante. Los valores
+                        enteros pueden ser numeros positivos, negativos y 0</li>
+                    <li><b><ins>Booleanos:</ins></b> Este tipo de datos solo puede tener dos valores, true o false.</li>
+                    <li><b><ins>Eventos:</ins></b> Un evento puede ser algo que el navegador hace o el usuario, java
+                        puede reaccionar a estos eventos algunos ejemplos son: Onchange(elemento html cambiado),
+                        Onclick(el usuario hace click a un elemento)
+                        , entre otros.</li>
+                </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="DOM">DOM (Document Objecto Model)</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Con el DOM, los programadores pueden construir documentos, navegar por su estructura
+                            , y añadir, modificar, o eliminar elementos y contenido.
+                        </li>
+                        <li>DOM significa Document Object Model, en español seria modelo de objetos del documento</li>
+                        <li>El DOM es una interfaz que implementan los navegadores para poder interactuar con los
+                            elementos HTML.</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        El modelo de objetos de documento (DOM) del W3C es una plataforma y una interfaz de lenguaje
+                        neutral que permite que los programas y los scripts accedan y actualicen dinámicamente el
+                        contenido, la estructura y el estilo de un documento. <br>
+                        <br>
+                        El DOM está definido y administrado por el W3C, por lo que los distintos navegadores simplemente
+                        aplican las especificaciones del World Wide Web Consortium, para dar soporte al DOM en sus
+                        aplicaciones. Cuando se carga una pagina web el navegador crea un Modelo de objeto de documento
+                        de la pagina. <br>
+                        <br>
+                        El HTML Dom es un modelo de objetos estandar y una interfaz de programacion para HTML que
+                        define:
+                    <ul>
+                        <li>Los elementos HTML como objetos</li>
+                        <li>Las propiedades de todos los elementos HTML.</li>
+                        <li>Los metodos para acceder a todos los elementos HTML</li>
+                        <li>Los eventos para todos los elementos HTML</li>
+                    </ul>
+                    En otras palabras: el DOM es un estandar sobre como obtener, cambiar, agregar o eliminar elementos
+                    HTML. <br>
+                    <br>
+                    <b><ins>Lexicalizacion:</ins></b> Los tokens emitidos se convierten en "objetos" que definen sus
+                    propiedades y reglas.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/lexicalizacion.png"><img src="imagenes/lexicalizacion.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    El DOM es una plataforma que permite que los programas y/o scripts puedan actualizar el contenido,
+                    estructura y estilo de un documento.
+                    <br>
+                    El DOM esta definido por el W3C, asi que los navegadores aplican las especificaciones del
+                    WorldWideWeb Consortium, para dar soporte al DOM. El HTML Dom
+                    es un modelo de objetos que define:
+                    <br>
+                <ul>
+                    <li>Elementos HTML como objetos</li>
+                    <li>Propiedades de todos los elementos HTML</li>
+                    <li>Metodos para acceder a los elementos HTML</li>
+                    <li>Eventos para todos los elementos HTML</li>
+                </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="DOM">DOM (Document Objecto Model)</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Con el DOM, los programadores pueden construir documentos, navegar por su estructura
+                            , y añadir, modificar, o eliminar elementos y contenido.
+                        </li>
+                        <li>DOM significa Document Object Model, en español seria modelo de objetos del documento</li>
+                        <li>El DOM es una interfaz que implementan los navegadores para poder interactuar con los
+                            elementos HTML.</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>Construccion del DOM:</ins></b> Por ultimo, los objetos se vinculan en una estructura de
+                        datos en forma de arbol
+                        que muestra las relaciones entre objetos primarios y secundarios definidas en el HTML original.
+                        <br>
+                        El resultado final de todo este proceso es el Document Object Model (DOM), que el navegador usa
+                        para todos los procesamientos de la pagina. <br> <br>
+                        <b><ins>Conversion de Tokens:</ins></b> El navegador convierte cadenas de caracteres en tokens
+                        diferentes especificados por el estandar W3C HTML5; por
+                        ejemplo, "&#60;html&#62;", "&#60;body&#62;" y otras cadenas entre parentesis angulares. Cada
+                        token tiene un significado especial y un conjunto de reglas propio
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/DOM.png"><img src="imagenes/DOM.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    Los objetos se vinculan en una estructura de arbol que muestra las relaciones entre los objetos
+                    primarios y secundarios en el HTML. <br>
+                    El resultado final de todo es el DOM que el navegador usa para procesar la pagina.
+                    <br> <br>
+                    <b><ins>Conversion de Tokens</ins></b> El navegador convierte cadenas de caracteres en tokens
+                    definidos por el W3C. Cada
+                    token tiene un significado especial
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="refJS">Referenciar con JavaScript</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Para poder manipular los elementos HTML con JS primero debemos encontrarlos</li>
+                        <li>Si no hay elementos con el id especificado devuelve NULL</li>
+                        <li>El objeto HTMLCollection representa una coleccion de nodos. Se puede acceder a los
+                            nodos por numeros de indice, el indice comienza en 0
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        Para encontrar elementos con JS podemos hacerlo de varias formas:
+                    <ul>
+                        <li>Por su id</li>
+                        <li>Por su nombre de clase</li>
+                        <li>Por su nombre de etiqueta</li>
+                        <li>Por su selector CSS</li>
+                    </ul>
+                    <b><ins>Encontrar elementos por su id</ins></b> <br>
+                    El metodo getElementById( ) encuentra al elemento que tiene el id especificado. Este metodo
+                    es uno de los mas comunes en HTML DOM, y se usa casi cada vez que desea manipular u obtener
+                    informacion
+                    de un elemento en su documento. <br> <br>
+                    Como ya sabemos, un id debe ser unico en un archivo HTML. Sin embargo, si existe mas de un elemento
+                    con el
+                    id especificado, el metodo getElementById( ) devuelve el primer elemento en el codigo fuente. <br>
+                    <b><ins>Encontrar elementos por su clase</ins></b> <br>
+                    El metodo getElementsByClassName( ) devuelve una coleccion de todos los elementos en el documento
+                    con el nombre
+                    de clase especificado, como un objeto HTMLCollection.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/classname.png"><img src="imagenes/classname.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    Se puede encontrar elementos con JS de las siguientes maneras: <br> <br>
+                <ul>
+                    <li><b><ins>Por su id:</ins></b> Para esto se usa el metodo getElementById, es uno de los mas
+                        comunes en HTML y se usa para manipular un elemento. Este metodo
+                        devuelve el primer elemento encontrado con el id</li> <br>
+                    <li><b><ins>Por su clase:</ins></b>Para esto se usa el metodo getElementByClassName( ), este
+                        devuelve una coleccion de todos los elementos en
+                        el documento con la clase especificada</li>
+                </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="refJS">Referenciar con JavaScript</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Para poder manipular los elementos HTML con JS primero debemos encontrarlos</li>
+                        <li>Si no hay elementos con el id especificado devuelve NULL</li>
+                        <li>El objeto HTMLCollection representa una coleccion de nodos. Se puede acceder a los
+                            nodos por numeros de indice, el indice comienza en 0
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>Encontrar elementos por su nombre de etiqueta</ins></b>: El metodo
+                        getElementsByTagName( ) devuelve una coleccion de todos los elementos en el documento
+                        con el nombre de etiqueta especificado, como un objeto HTMLCollection. <br>
+                        <br>
+                        <b><ins>Encontrar elementos por su selector CSS</ins></b> <br>
+                        El metodo querySelector( ) devuelve el primer elemento que coincide con un selector CSS
+                        especificado en el documento. <br>
+                        Si el selector conicide con una "id" en el documento que se usa varias veces (hay que tener
+                        en cuenta que un id debe ser unico dentro de una pagina y no debe usarse mas de una vez),
+                        devuelve
+                        el primer elemento coincidente. <br> <br>
+                        El metodo querySelectorAll( ) devuelve todos los elementos del documento que coinciden con un
+                        selector
+                        "id" especificado, como un objeto NodeList estatico.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/classname.png"><img src="imagenes/classname.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                <ul>
+                    <li><b><ins>Por su nombre de etiqueta:</ins></b> Se usa el metodo getElementsByTagName( ) devuelve
+                        una coleccion
+                        de todos los elementos con el nombre de etiqueta buscado</li>
+                    <li><b><ins>Por su selector CSS:</ins></b> Se usa el metodo querySelector( ) devuelve el primer
+                        elemento que coincide con un selector CSS. Si el selector
+                        coincide con un id en el documento devuelve el primer elemento coincidente. <br>
+                        El metodo querySelectorAll( ) devuelve todos los elementos del documento que coinciden con un
+                        selector</li>
+                </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="style">Propiedad Style</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Se puede cambiar el estilo mediante un evento</li>
+                        <li>Se puede cambiar el estilo mediante una funcion</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        En JavaScript podemos utilizar la propiedad style para manipular el estilo de un elemento
+                        HTML, o para crear uno de nuevo. Para cambiar el estilo de un elemento HTML se debe usar la
+                        siguiente sintaxis: <br> <br>
+                        Document.getElementById("id").style.propiedad="valor o nuevo valor" <br>
+                        <br>
+                        <b><ins>Cambiar el estilo</ins></b> <br>
+                        El estilo de CSS puede ser cambiado mediante un evento, por ejemplo con un boton que seria el
+                        evento
+                        onclick <br> <br>
+                        <b><ins>El estilo de CSS puede ser cambiado mediante una funcion</ins></b> <br>
+                        Se puede cambiar usando la sintaxis function NombredeFuncion( )
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/style.png"><img src="imagenes/style.png" alt=""
+                            style="height: 300px; margin-top: 20px;"></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen podemos cambiar el estilo con javascript mediante dos cosas:
+                <ul>
+                    <li><b><ins>Por Funciones:</ins></b> Podemos hacerlo mediante las funciones y el selector de
+                        preferencia</li> <br>
+                    <li><b><ins>Por Eventos:</ins></b> Podemos hacerlo con eventos por ejemplo con onclick para hacer
+                        que cuando haga click sobre el
+                        elemento se cambie el estilo</li>
+                </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="classlist">Propiedad classList</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>La propiedad classList devuelve los nombres de clase de un elemento</li>
+                        <li>La propiedad classList no es soportada en IE9 y versiones anteriores</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        Esta propiedad es util para agregar, eliminar y alternar clases CSS en un elemento. La propiedad
+                        classlist es de solo lectura,
+                        sin embargo, puede modificarla utilizando los metodos add( ), remove( ) y toggle( ). <br>
+                        <b><ins>classList.add</ins></b> <br>
+                        La propiedad classList mas el metodo add agrega uno o mas nombres de clase a un elemento. Si la
+                        clase especificada ya existe, la clase no se agregara.
+                        La sintaxis es asi: <br>
+                        document.getElementById("cuadro1").classList.add("estilo1"); <br> <br>
+                        <b><ins>classList.remove( )</ins></b> <br>
+                        La propiedad classlist mas el metodo remove elimina uno o mas nombres de clase a un elemento.
+                        Eliminar una clase que no existe, no arroja un error. La sintaxis es la siguiente <br>
+                        document.getElementById("cuadro1").classList.remove("estilo3"); <br> <br>
+                        <b><ins>classList.toggle( )</ins></b> <br>
+                        La propiedad classlist mas el metodo toggle alterna entre un nombre de clase para un elemento.
+                        El primer paramtero elimina la clase especificada de un elemento y devuelve falso.
+                        El segundo paraetro opcional es un valor booleano que obliga a agrega o quitar la clase,
+                        independientemente de si ya existia o no. Por ejemplo: <br>
+                    <ul>
+                        <li>Eliminar una clase:element.classList.toggle("class",false);</li>
+                        <li>Agregar una clase:element.classList.toggle("class",true);</li>
+                    </ul>
+
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/classlist.png"><img src="imagenes/classlist.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen la propiedad classlist nos sirve para agregar, eliminar o alternar clases css en un
+                    elemento. Tenemos las siguientes opciones:
+                <ul>
+                    <li><b><ins>classList.add:</ins></b> Es la propiedad classlist mas el metodo add, este agrega uno o
+                        mas clases al elemento se usa asi: document.getElementById("cuadro").classList.add("estilo1");
+                    </li> <br>
+                    <li><b><ins>classList.remove:</ins></b> Es la propiedad classlist mas el metodo remove, este remueve
+                        la clase a un elemento, se usa de la siguiente manera:
+                        document.getElementById("cuadro1").classList.remove("estilo3");</li> <br>
+                    <li><b><ins>classList.toggle:</ins></b>Es la propiedad classlist mas el metodo toggle, este alterna
+                        entre un nombre de clase para un elemento. El primer paramtero elimina la clase especificada y
+                        devuelve falso, el segundo es opcional,
+                        es un valor booleano que obliga a agregar o quitar la clase se usa de las siguientes maneras
+                        <ul>
+                            <li>Eliminar una clase:element.classList.toggle("class",false);</li>
+                            <li>Agregar una clase:element.classList.toggle("class",true);</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="Eventos"> Eventos</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>El metodo RemoveEventListener( ) no es soportado en Internet Explorer 8 y versiones
+                            anteriores.</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        El HTML DOM le permite ejecutar codigo cuando ocurre un evento. El navegador genera eventos
+                        cuando "suceden cosas" a elementos HTML como por ejemplo:
+                    <ul>
+                        <li>Al hacer click con el mouse: onclick</li>
+                        <li>Al hacer doble click con el mouse: onddbclick</li>
+                        <li>Al colocar el mouse sobre un elemento: onmouseover</li>
+                        <li>Al alejar el mouse de un elemento: onmouseout</li>
+                        <li>Cuando una pagina web se ha cargado: onload</li>
+                        <li>Al presionar una tecla: onkeydown</li>
+                        <li>Al hacer scroll en la pagina: onscroll</li>
+                    </ul>
+                    <b><ins>EventListener</ins></b> <br>
+                    El metodo addEventListener( ) adjunta un controlador de eventos al elemento especificado. La
+                    sintaxis para este metodo es la siguiente: <br>
+                    Elemento.addEventListener(evento,funcion) <br>
+                    El metodo document.addEventListener( ) se usa para adjuntar un controlador de eventos al documento
+                    HTML. <br>
+                    <b><ins>RemoveEventListener</ins></b> <br>
+                    El metodo removeEventListener( ) elimina un controlador de eventos que se ha adjuntaado con el
+                    metodo addEventListener( ). <br>
+                    Para eliminar controladores de eventos, la funcion especificada con el metodo addEventListener( )
+                    debe ser una funcion externa.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/eventos.jfif"><img src="imagenes/eventos.jfif" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    Los eventos son los que nos permite ejecutar un codigo cuando sucede algo a elementos HTML, por
+                    ejemplo: onclick (al hacer click),
+                    ondbclick (al hacer doble click), onmouseover(al colocar el mouse sobre un elemento), onmouseout(al
+                    alejar el mouse de un elemento),
+                    onload (cuando una pagina web se haya cargado), onkeydown(al presionar una tecla), onscroll(al hacer
+                    scroll en la pagina). <br>
+                    <br><b><ins>EventListener</ins></b> <br>
+                    El metodo addEventListener( ) adjunta un controlador de eventos al elemento indicado. La sintaxis es
+                    la siguiente: Elemento.addEventListener(evento,funcion) <br>
+                    <br><b><ins>RemoveEventListener</ins></b> <br>
+                    El metodo removeEventListener( ) elimina un controlador de eventos que se adjunto anteriormente con
+                    el addEventListener
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="Ifelse"> Declaracion Condicional</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>El bloque else if se ejecuta si ninguna de las condiciones anteriores fue verdadera. Es
+                            opcional, pero util para
+                            manejar casos no previstos.
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        Una declaracion condicional se usa para determinar el flujo de un programa basado en una
+                        condicion. Si la condicion es verdadera se ejecuta
+                        un fragmento de codigo, si la condicion es falsa se ejecuta otro fragmento de codigo diferente.
+                        <br>
+                        En Java tenemos las siguientes declaraciones condicionales:
+                    <ul>
+                        <li>Use if para especificar un bloque de codigo para ejecutarse, si una condicion especificada
+                            es verdadera.</li>
+                        <li>Use else para especificar un bloque de codigo para ser ejecutado, si la misma condicion es
+                            falsa.</li>
+                    </ul>
+                    <b><ins>La sintaxis</ins></b> <br>
+                    La sintaxis de una declaracion condicional basica es la siguiente: <br>
+                    If(condicion){ Codigo que sera ejecutado si la condicion es verdadera} <br>
+                    Else{Codigo que sera ejecutado si la condicion es falsa} <br>
+                    <b><ins>Varias Condiciones</ins></b> <br>
+                    Las declaraciones else if en JavaScript permiten evaluar multiples condiciones secuencialmente. Esto
+                    es util cuando se
+                    tienen mas de dos posibles situaciones que manejar en el codigo. <br>
+                    If(condicion){ Si es verdadera, se ejecuta el bloque de codigo correspondiente y se salta el resto
+                    de las condiciones. Si es falsa, se pasa a la siguiente condicion}
+                    <br>Else if{}
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/elseif.png"><img src="imagenes/elseif.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    Los eventos son los que nos permite ejecutar un codigo cuando sucede algo a elementos HTML, por
+                    ejemplo: onclick (al hacer click),
+                    ondbclick (al hacer doble click), onmouseover(al colocar el mouse sobre un elemento), onmouseout(al
+                    alejar el mouse de un elemento),
+                    onload (cuando una pagina web se haya cargado), onkeydown(al presionar una tecla), onscroll(al hacer
+                    scroll en la pagina). <br>
+                    <br><b><ins>EventListener</ins></b> <br>
+                    El metodo addEventListener( ) adjunta un controlador de eventos al elemento indicado. La sintaxis es
+                    la siguiente: Elemento.addEventListener(evento,funcion) <br>
+                    <br><b><ins>RemoveEventListener</ins></b> <br>
+                    El metodo removeEventListener( ) elimina un controlador de eventos que se adjunto anteriormente con
+                    el addEventListener
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="Viewport"> ViewPort</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Varía según el dispositivo y será más pequeña en un smartphone que en la computadora.</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        El viewport o ventana grafica es el area visible del usuario de una pagina web. <br>
+                        <b><ins>Introduccion</ins></b> <br>
+                        Antes de las tabletas los teléfonos móviles, las paginas web se diseñaban solo para pantallas de
+                        computadora, y era común que las paginas web tuvieran un diseño estático y un tamaño fijo. <br>
+                        <br>
+                        Luego, cuando comenzamos a navegar por internet utilizando tabletas y teléfonos móviles, las
+                        paginas web de tamaño fijo eran demasiado grandes para ajustarse a la ventana grafica. Para
+                        solucionar esto, los navegadores en esos dispositivos redujeron la pagina web completa para
+                        ajustarse a la pantalla. <br>
+                        Los usuarios estan acostumbrados a desplazar sitios web verticalmente tanto en dispositivos de 
+                        escritorio como moviles, pero no horizontalmente. Por lo tanto, si el usuario se ve obligado a desplazarse
+                        horizontalmente o alejarse, para ver toda la pagina web, se obtiene una experiencia de usuario pobre. <br>
+                        HTML5 introdujo un metodo para permitir que los disenadores web tomen el control de la ventana grafica , atraves de la 
+                        etiqueta &#60;meta&#62;. <br>
+                        &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                        <br> La parte de la escala inicial = 1.0 establece el nivel de zoom inicial cuando el navegador carga la pagina por primera vez
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/viewport.jfif"><img src="imagenes/viewport.jfif" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen, el viewport el area visible del usuario de una pagina web. HTML5 tiene la linea de codigo que 
+                    permite que los disenadores web tomen el control de la ventana grafica, a traves de la etiqueta &#60;meta&#62;. <br>
+                    La sintaxis es la siguiente: <br>
+                    &#60;meta name="viewport" content="width=device-width,initial-scale=1.0"&#62; <br>
+                    La parte de initial scale indica el zoom inicial al cargar la pagina. 
+
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="medias">Media Queries</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Se convirtio en un estandar recomendado por la W3C en junio de 2021 y es un principio basico del diseño web adaptativo</li>
+                        <li>La recomendacion de HTML4 de 1997 muestra un ejemplo de como podria agregarse en el futuro</li>
+                        <li>Computadora de escritorio: Estilo normal</li>
+                        <li>Laptop y tablet horizontal: @media screen and(max-width:1024px)</li>
+                        <li>Tablet Vertical y smartphone horizontal: @media screen and (max-width:720px)</li>
+                        <li>Smartphone vertical: @media screen and (max-width: 480px)</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        Las medias queries son un modulo de CSS3 que adapta la representacion del contenido a las caracteristicas
+                        de un dispostivo. <br>
+                        <b><ins>Historia</ins></b> <br>
+                        Las medias queries se esbozaron por primera vez en la propuesta inicial de CSS de Hakon Wium Lie en 1994, 
+                        pero no se convirtio en parte de CSS1. En el 2000, la W3C comenzo a trabar en las medias queries y tambien en otro 
+                        esquema para el soporte de varios dispositivos: CC/PP (Composite Capability/ Preference Profiles). <br>
+                        <br>
+                        Las 2 acciones estaban orientadas al mismo problema, pero CC/PP es centrado en el servidor, mientras los Media Queries estan centrados en el cliente. <br>
+                        El primer borrador publico para Media Queries fue publicado en 2001, y la especificacion se convirtio en una recomendacion de la W3C en 2012 despues que los navegadores le dieran 
+                        soporte.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/medias.jfif"><img src="imagenes/medias.jfif" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen, las media queries (consulta de medios) son un modulo de CSS3 que adapta la representacion del contenido a las caracteristicas de un dispositivo. <br>
+                    <b><ins>Historia</ins></b> <br>
+                    Salieron por primera vez en la propuesta inicial de CSS, de Hakon Wium Lie en 1994, pero no se hizo parte de CSS1.
+                    En el 2000, la W3C empezo a trabajar tambien en las media queries y tambien en otro esquema CC/PP (Composite Capability/Preference Profiles).
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="medias">Media Queries</h1>
+        </header>
+        <nav>
+            <a href="#JavaScript">JavaScript</a>
+            <a href="#DOM">DOM</a>
+            <a href="#refJS">Referenciar Java</a>
+            <a href="#style">Style</a>
+            <a href="#classlist">Classlist</a>
+            <a href="#Eventos">Eventos</a>
+            <a href="#Ifelse">If-Else</a>
+            <a href="#Viewport">Viewport</a>
+            <a href="#medias">@Medias</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Las media queries se pueden utilizar para verificar muchas cosas, como: ancho y alto de la 
+                            ventana grafica, ancho y alto del dispositivo, orientacion del dispositivo y la resolucion.
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>@Media</ins></b> <br>
+                        CSS2 introdujo tipos de medios. La regla @media, introducida en CSS2, hizo posible definir diferentes
+                        reglas de estilo para diferentes tipos de medios. Se podian definir reglas de estilo para computadoras, impresoras, 
+                        dispositivos de mano, televisiones, etc. Desafortunadamente, este tipos de medios nunca recibieron mucho soporte por 
+                        parte de los dispositivos, aparte del tipo de medios de impresion. <br> <br>
+                        CSS3 introdujo media queries que extendieron la idea de los tipos de media de CSS2: en lugar de buscar un tipo de dispositivo,
+                        analizan la capacidad del dispositivo. El uso de media queries es una tecnica popular para entregar una hoja de estilo personalizada para computadoras 
+                        de escritorio, computadoras portatiles, tabletas y telefonos moviles.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/mediascss.png"><img src="imagenes/mediascss.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen, las media queries (consulta de medios) son un modulo de CSS3 que adapta la representacion del contenido a las caracteristicas de un dispositivo. <br>
+                    <b><ins>Historia</ins></b> <br>
+                    Salieron por primera vez en la propuesta inicial de CSS, de Hakon Wium Lie en 1994, pero no se hizo parte de CSS1.
+                    En el 2000, la W3C empezo a trabajar tambien en las media queries y tambien en otro esquema CC/PP (Composite Capability/Preference Profiles).
+                </p>
+            </article>
+        </footer>
+    </main>
+
+</body>
+
+</html>

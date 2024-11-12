@@ -1,0 +1,145 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 0 auto;
+    
+}
+body{
+    background-color: #003B46;
+}
+main{
+    width: 1366px;
+    height: 2100px;
+    margin-top: 50px;
+}
+header{
+    width: 1320px;
+    height: 320px;
+    background-color: #66A5AD;
+    text-align: center;
+}
+header a {
+    width: 80px;
+    float: left;
+}
+header img{
+    width: 80px;
+}
+header img:hover{
+    transform: scale(1.05) rotate(-40deg);
+    transition: 0.8s;
+}
+header h1{
+    font-size: 80px;
+    display: inline-block;
+    margin-top: 8%;
+    font-family: "Kanit", system-ui;
+    font-weight: 600;
+}
+nav{
+    width: 1320px;
+    height: 180px;
+    background-color: #0e5562;
+    text-align: center;
+}
+nav a{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 90px;
+    text-decoration: none;
+    font-family: "Tilt Neon", system-ui;
+    color: white;
+    line-height: 90px;
+    font-size: 28px;
+}
+
+nav a:nth-child(3){
+    font-size: 24px;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: #066c7d;
+    transform: scale(1.1);
+    transition: 1s;
+}
+section{
+    width: 1320px;
+    height: 1100px;
+    margin-top: 20px;
+}
+section h2{
+    font-family: "Kanit", system-ui;
+    font-weight: 600;  
+    font-size: 45px;
+    text-align: center;
+}
+.primer_contenido{
+    width: 550px;
+    height: 1100px;
+    background-color: #66A5AD;
+    margin-left: 20px;
+    display: inline-block;
+}
+.primer_contenido article{
+    background-color: #C4DFE6;
+    width: 500px;
+    height: 900px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 30px;
+    padding: 5px;
+    float: left;
+}
+.segundo_contenido{
+    width: 700px;
+    height: 1100px;
+    background-color: #66A5AD;
+    display: inline-block;
+    margin-left: 30px;
+}
+.segundo_contenido article{
+    background-color: #C4DFE6;
+    width: 580px;
+    height: 550px;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    padding: 20px;
+    float: left;
+}
+.imagen {
+    background-color: #C4DFE6;
+    width: 620px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+.imagen img{
+    width: 620px;
+    height: 350px;
+}
+.imagen :hover{
+ transform: scale(1.04); 
+ transition: 1s;  
+}
+footer{
+    width: 1320px;
+    height: 460px;
+    margin-top: 20px;
+    background-color: #66A5AD;
+}
+footer h2{
+    font-family: "Kanit", system-ui;
+    font-weight: 600;  
+    font-size: 45px;
+    text-align: center;
+}
+footer article{
+    background-color: #C4DFE6;
+    width: 1250px;
+    height: 339px;
+    margin-left: 25px;
+    font-size: 20px;
+    padding: 12px;
+}

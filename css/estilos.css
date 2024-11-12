@@ -1,0 +1,117 @@
+
+body{
+    background-image: -webkit-radial-gradient(center, #793282,#67296D,#58215C,#3D113E);
+}
+main{
+    width: 1366px;
+    height: 1700px;
+    margin: 0 auto;
+}
+header{
+    height: 310px;
+    width: 1400px;
+    margin-left: -20px;
+    margin-top: 30px;
+    background-color: #6EC6D9;
+    font-family: "Patua One", serif;
+    display: flex;
+    border-radius: 70px;
+}
+header div{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #913B8E;
+    border-radius: 50px;
+    width: 260px;
+    height: 260px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Anton", sans-serif;
+        color:#f595f2;
+}
+#mundo{
+    width: 210px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: .6s;
+}
+#mundo:hover{
+    transform: rotate(360deg) scale(1.1);
+}
+header h1{
+    color: #411878;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 110px;
+    
+}
+section{
+    background-color: #25346D;
+    width: 1400px;
+    height: 1600px;
+    margin-top: 30px;
+    margin-left: -20px;
+    float: left;
+    border-radius: 90px;
+}
+section section{
+    width: 600px;
+    height: 1500px;
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 70px;
+    border-radius: 40px;
+}
+#Bitacoras img{
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+    
+}
+#Bitacoras img:hover{
+    transform: scale(1.04);
+    transition: 0.8s;
+}
+article:nth-child(2){
+    margin-top: -80px;
+}
+article:nth-child(3){
+    margin-top: -80px;
+}
+#Parciales img{
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+}
+#Parciales img:hover{
+    transform: scale(1.04);
+    transition: 0.8s;
+}
+footer{
+    background-color: #6E91CB;
+    width: 1400px;
+    height: 230px;
+    margin-top: 20px;
+    margin-left: -20px;
+    border-radius: 20px;
+    float: left;
+
+}
+footer address{
+    margin-top: 40px;
+    margin-left: 60px;
+    height: 300x;
+    background-color: #29235C;
+    padding: 20px;
+    width: 350px;
+    height: 100px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+}
+

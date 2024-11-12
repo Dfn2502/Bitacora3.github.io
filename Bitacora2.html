@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora 2</title>
+    <link rel="stylesheet" href="css/estilos_bitacora2.css">
+
+    <!--Inicio Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Rowdies:wght@300;400;700&family=Sono:wght@200..800&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <!--Cierre Fuente-->
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="flexbox">Modulo Flexbox</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>El modulo Flexbox es candidato a recomendacion del W3C a partir de ocutbre de 2017.</li>
+                        <li>Un contenedor flexible expande a los elementos para llenar el espacio libre disponible
+                            o los reduce para evitar el desbordamiento.
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        Tiene como objetivo proporcionar una manera mas eficiente de diseñar, alinear y distribuir el espacio entre los elementos 
+                        en un contenedor, incluso cuando su tamaño es desconocido y/o dinamico (por lo tanto la palabra flex). <br> <br>
+                        La idea principal detras del diseño flexible es otorgar al contendo la capacidad de modificar el ancho, alto y el orden de sus 
+                        elementos para llenar mejor el espacio disponible (principalmente para adaptarse a todo tipo de dispositivos de visualizacion y tamaños de pantalla). <br> <br>
+                        Los mas importante es que el diseño de flexbox es independiente de la direccion en lugar de los diseños regulares (bloque que se basa verticalmente y en linea que se basa horizontalmente).
+                        Si bien estos funcionan bien para las paginas, carece de flexibilidad (no es un juego de palabras) para admitir aplicaciones grandes o complejas (especialmente cuando se trata de cambio de
+                        orientacion, cambio de tamaño, etc.). <br> <br>
+                        <b><ins>Soporte del navegador</ins></b>
+                        <ul>
+                            <li><b><ins>Display: flex;</ins></b> sintaxis reciente de la especificacion</li>
+                            <li><b><ins>Display: flexbox;</ins></b> sintaxis no oficial de 2011</li>
+                            <li><b><ins>Display: box;</ins></b>  Sintaxis antigua de 2009</li>
+                        </ul>
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/flexbox.png"><img src="imagenes/flexbox.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    El modulo flexbox lo que busca es darnos una mejor forma de diseñar, alinear y distribuir  el espacio 
+                    entre los elementos en un contenedor, aun cuando se desconoce el tamaño de este. Lo principal es 
+                    darle al elemento la capacidad de modificiar su ancho, alto y el orden de sus elementos para llenar el espacio
+                    disponible. <br>
+                    Lo mas importante es que el diseño es independiente de la direccion en lugar de los diseños regulares. <br> <br>
+                    <b><ins>Soporte del navegador</ins></b>
+                    <ul>
+                        <li><b><ins>Display: flex;</ins></b> sintaxis reciente de la especificacion</li>
+                        <li><b><ins>Display: flexbox;</ins></b> sintaxis no oficial de 2011</li>
+                        <li><b><ins>Display: box;</ins></b> sintaxis antigua de</li>
+                    </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="flexbox">Flexbox (Padre)</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>El inicio del contenedor se llama start y el final end</li>
+                        <li>El espacio de gap solo se aplica entre leementos que no estan en los bordes exteriores</li>
+                        <li>La propiedad align-content no tiene efecto cuando solo hay una linea de elementos flexibles</li>
+                        <li>Justify-content ayuda a distribuir el espacio libre adicional que sobra cuando todos los elementos flexibles de una linea 
+                            son inflexibles o flexibles, pero han alvanzado su tamaño maximo.
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>Display</ins></b> <br>
+                        Esto define un contenedor flexible en linea o bloque en funcion del valor dado. Permite un contexto flexible para todos sus hijos directos. <br>
+                        .container{ display:flex;} <br>
+                        <b><ins>Flex direction</ins></b> <br>
+                        Establece el eje principal, definiendo la direccion en que se colocan los elementos flexibles en el contenedor flexible. <br>
+                        <b><ins>Flex-Wrap</ins></b> <br>
+                        Por defecto, todos los elementos intentaran encajar en una linea. Puede cambiar eso y permitir que los elementos se ajusten segun sea necesario con esta propiedad.
+                        .container{ Flex-wrap: nowrap/wrap/wrap-reverse;} <br>
+                        <b><ins>Flex-flow</ins></b> <br>
+                        Esta es una abreviatura de popiedades de flex-direction y flex-werap, que juntas definen los ejes principal y transversal del contenedor flexible. <br>
+                        <b><ins>Justify content</ins></b> <br>
+                        Esto define la alineacion a lo largo del eje principal. Tambien ejerce cierto control sobre la alineacion de los elementos cuando se desbordan en la linea.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/flexbox.png"><img src="imagenes/flexbox.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    El modulo flexbox lo que busca es darnos una mejor forma de diseñar, alinear y distribuir  el espacio 
+                    entre los elementos en un contenedor, aun cuando se desconoce el tamaño de este. Lo principal es 
+                    darle al elemento la capacidad de modificiar su ancho, alto y el orden de sus elementos para llenar el espacio
+                    disponible. <br>
+                    Lo mas importante es que el diseño es independiente de la direccion en lugar de los diseños regulares. <br> <br>
+                    <b><ins>Soporte del navegador</ins></b>
+                    <ul>
+                        <li><b><ins>Display: flex;</ins></b> sintaxis reciente de la especificacion</li>
+                        <li><b><ins>Display: flexbox;</ins></b> sintaxis no oficial de 2011</li>
+                        <li><b><ins>Display: box;</ins></b> sintaxis antigua de 2009</li>
+                    </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="flexbox">Flexbox (Padre) PT2</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                       
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <ul>
+                            <li><b><ins>Flex-start (predeterminado)</ins></b>: Los items se alinean hacia la linea de inicio</li>
+                            <li><b><ins>Flex-end</ins></b>: Los items se alinean hacia la linea final</li>
+                            <li><b><ins>Center:</ins></b> Los items estan centrados a lo largo de la linea</li>
+                            <li><b><ins>Space-between:</ins></b> Los elementos se distribuyen uniformemente en la linea, el primer elemento esta en la linea de inicio, el ultimo elemento en la linea final</li>
+                            <li><b><ins>Space-around:</ins></b>Los elementos se distribuyen uniformemente en la linea con el mismo espacio a su alrededor.</li>
+                            <li><b><ins>Space-evenly:</ins></b>Los elementos se distribuyen de modo que el espaciado entre dos elementos sea igual</li>
+                        </ul>
+
+                        <b><ins>Align-items</ins></b> <br>
+                        Esto define el comportamiento predeterminado de como los elementos flexibles se distribuyen a lo largo del eje transversal en la línea actual.
+                        <br>
+                        <b><ins>Align-content</ins></b> <br>
+                        Esta propiedad alinea los renglones de un contenedor flexible cuando hay espacio extra en el eje transversal, de manera similar a como justify-content alinea elementos individuales dentro del eje principal. 
+                        <br>
+                        <b><ins>Gap</ins></b> <br>
+                        Controla el espacio entre elementos flexibles.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/flexbox2.png"><img src="imagenes/flexbox2.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    El modulo flexbox lo que busca es darnos una mejor forma de diseñar, alinear y distribuir  el espacio 
+                    entre los elementos en un contenedor, aun cuando se desconoce el tamaño de este. Lo principal es 
+                    darle al elemento la capacidad de modificiar su ancho, alto y el orden de sus elementos para llenar el espacio
+                    disponible. <br>
+                    Lo mas importante es que el diseño es independiente de la direccion en lugar de los diseños regulares. <br> <br>
+                    <b><ins>Soporte del navegador</ins></b>
+                    <ul>
+                        <li><b><ins>Display: flex;</ins></b> sintaxis reciente de la especificacion</li>
+                        <li><b><ins>Display: flexbox;</ins></b> sintaxis no oficial de 2011</li>
+                        <li><b><ins>Display: box;</ins></b> sintaxis antigua de 2009</li>
+                    </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="flexbox">Propiedades para el hijo</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Por default,los elementos flexibles se presentan en el orden de origen</li>
+                        <li>Todos los elementos tienen por default el order 0;</li>
+                        <li>Unidad de reduccion = espacio faltante/suma de flex-shrink</li>
+                        <li>Tener en cuenta que las propiedades float, clear y vertical-align no tienen efecto en un elemento flexible</li>
+                        <li>Unidad de crecimiento = espacio disponible/ suma de flex-grow</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>Order</ins></b> <br>
+                        La propiedad order controla el orden en el que aparecen en el contenedor flexible. <br>
+                        <b><ins>Flex-Grow</ins></b> <br>
+                        Define la capacidad para que un item crezca si es necesario. Acepta un valor entero que sirve como propocion.
+                        Indica que cantidad de espacio disponible dentro del contenedor flexible debe ocupar el item. Los numeros negativos no son validos. <br>
+                        Flex-grow:numero entero; <br>
+                        <b><ins>Flex-shrink</ins></b> <br>
+                        Especifica la capacidad de un elemento para reducir en relacion con el resto de los elementos flexibles del contenedor. con flex-shrink se especifica el comportamiento de los items cuando el tamaño del contenedor es menor al de los items que lo componen. <br>
+                        <b><ins>Flex-basis</ins></b> <br>
+                        Esto define el tamaño predeterminado de un elemento antes de distribuir el espacio restante. Puede ser una longitud (por ejemplo,20%,5rem,etc.) o una palabra clave. <br>
+                        <b><ins>Flex</ins></b> <br>
+                        Es la abreviatura de flex-grow,flex0shrink y flex-basis combinadas: flex: 2 2 10%; Tres valores: flex-grow | flex- shrink | flex-basis <br>
+                        <b><ins>Align-self</ins></b> <br>
+                        Esto permite que la alineacion predeterminada se anule para los elementos flex esepcificos
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/flexGrowShrink.png"><img src="imagenes/flexGrowShrink.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    <ul>
+                        <li><b><ins>Order</ins></b>: Controla el orden en el que aparecen los elementos en el contenedor flexible</li>
+                        <li><b><ins>Flex-grow:</ins></b> Define cuantas unidades de crecimiento va a crecer un item si es necesario.</li>
+                        <li><b><ins>Flex-shrink:</ins></b> Define cuantas unidades de decremento va a reducir un item si es necesario.</li>
+                        <li><b><ins>Flex-basis:</ins></b>Esto define el tamaño predeterminado de un elemento antes de distribuir el espacio restante</li>
+                        <li><b><ins>Flex:</ins></b>Es un modo de abreviar flex-grow,flex-shrink y flex-basis en una sola propiedad</li>
+                        <li><b><ins>Align-self:</ins>Hace que la alineacion predeterminada se anule para los elementos flex especificos</b></li>
+                    </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="img">Imagenes</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Para acceder a un nivel inferior a la carpeta en la que esta el archivo css es../carpeta de nivel inferior/imagen;</li>
+                        <li>Al ampliar una imagen a mas de su tamaño original se va a empezar a pixelar</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                       <b><ins>Propiedad width</ins></b><br>
+                       El width hace que la imagen mida un tanto porcentaje del elemento contenedor, un 100% hara que la imagen cubra todo 
+                       el elemento contenedor. <br>
+                       <b><ins>Propiedad max-width</ins></b> <br>
+                       Esta propiedad dice que la imagen se va a poder reducir pero no se va a ampliar a mas de sus dimensiones originales, el problema es que tendremos 
+                       espacios en blancos: max-width: 100%; <br>
+                       <b><ins>Imagenes de fondo</ins></b> <br>
+                       Existen 3 formas de poner una imagen de fondo:
+                       <ul>
+                        <li>Background-size:contain, con esta la imagen se ampliara para cubrir todo el elemento contenedor</li>
+                        <li>Background-size:100% 100%; con esta propiedad la imagen establecera el ancho de la imagen de fondo al 100% y el alto al 100%</li>
+                        <li>Background-size: cover; Con esta propiedad la imagen se escalara para cubrir todo el area de contenido del contenedor.</li>
+                       </ul>
+                       <b><ins>Diferentes imagenes</ins></b> <br>
+                       Para cambiar imagenes con media queries se hace con background size, esto cuando tenemos la imagen de fondo con css. <br>
+                       <b><ins>Elemento Picture</ins></b> <br>
+                       Se pueden configurar diferentes fuentes: &#60;picture&#62; <br>
+                       &#60;source srcset="penguins2.jpg" media="(max-width:480px)"&#62; 
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/picture.jpg"><img src="imagenes/picture.jpg" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    <ul>
+                        <li><b><ins>Propiedad-width:</ins></b> Hace la imagen mida un cierto porcentaje del elemento contenedor</li> <br>
+                        <li><b><ins>Propiedad max-width:</ins></b> Dice que la imagen se va a poder reducir pero no se va a poder ampliar a mas de sus dimensiones originales</li>
+                        <li><b><ins>Imagenes de fondo:</ins></b> Hay 3 maneras
+                         <ul>
+                            <li><b><ins>Backsground-size:contain</ins></b>, como su nombre lo dice el elemento contenedor va a contener por completo a la imagen</li>
+                            <li><b><ins>Background-size:100% 100%</ins></b>, establece el ancho y el alto de la imagen al 100% del elemento contenedor</li>
+                            <li><b><ins>Background-size:cover</ins></b>, La imagen se escalara para cubrir todo el area del contenedor</li>
+                         </ul></li>
+                        <li><b><ins>Diferentes imagenes:</ins></b> Se puede cambiar imagenes con media queries con background-size, solo cuando la imagen esta de fondo con css</li>
+                        <li><b><ins>Elemento Picture:</ins></b>Se pueden configurar diferentes fuentes para distintos media queries: <br>
+                            &#60;picture&#62; <br>
+                            &#60;source srcset="penguins2.jpg" media="(max-width:480px)"&#62; </li>
+                    </ul>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="svg">Scalable Vectorial Graphics</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>El SVG WG decidio no desarrollar ninguna de las presentaciones sino desarrollar un nuevo lenguaje</li>
+                        <li>El usuario puede aumentar la vista de un SVG en la pantalla sin sacrificar la calidad.</li>
+                        <li>Los archivos SVG son compactos y ofrecen graficos de alta calidad en internet, en impresoras e incluso en dispositivos portatiles.</li>
+                        <li>Los SVG se pueden utilizar como imagenes, como formas, trazados, textos y efectos de filtro</li>
+                        <li>SVG se convirtio en una recomendacion del W3C en septiembre de 2001</li>
+                        <li>La segunda edicion de SVG 1.1 es una recomendacion del W3C y es la version mas reciente de la especificacion completa.</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        En los primeros dias de la web, hubo una explosion de diferentes formatos y extensiones de HTML. Desde el principio quedo claro que 
+                        un formato de grafico vectorial para la web seria util. Chris Lilley redacto un documento para los requisitos de graficos vectoriales en 1996.
+                        Como resultado se cre el SVG WG (working group). Las compañias tenian diferentes ideas sobre sus especificaciones. <br>
+                        Por ejemplo, Adobe dijo que PGML era solo una propuesta estaban felices que W3C lo modificara de alguna manera. Pero Microsoft 
+                        dijo que VML era documentacion de un producto ya implementado y W3C no estaba autorizado a realizar ningun cambio. <br>
+                        <br>
+                        SVG es un lenguaje de marcado para describir imagenes y aplicaciones de graficos bidimensionales, y un conjunto de interfaces de scripts de graficos 
+                        relacionados.  Es un formato libre de derechos de uso generalizado desarrollado y mantenido por el W3C SVG Working Group. <br>
+                        Este es un grupo publico, que trabaja en una lista de correo abierta y que agradece sus comentarios. SVG 2 se encuentra actualmente en desarrollo y agrega nuevas caracteristicas 
+                        de facilidad de uso a SVG, asi como una integracion mas cercana con HTML, CSS y DOM, y caracteristicas obsoletas que no son compatibles con todos los navegadores.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/svg.jpg"><img src="imagenes/svg.jpg" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    Es un lenguaje de marcado para describir imagenes y aplicaciones de graficos bidimensionales, fue evolucionando poco a poco en el transcurso del tiempo. <br>
+                    En 2001 fue oficialmente hecho una recomendacion del W3C pero fue la version 1.1. <br>
+                    Actualmente se esta trabajando en el SVG 2 con nuevas caracteristicas de facilidad de uso, ademasa de integracion mas cercana a HTML, CSS y DOM, tambien se 
+                    esta trabajando en caracteristicas obsoletas que no son compatibles con todos los navegadores.
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="svg">Scalable Vectorial Graphics PT2</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Los archivos SVG son graficos vectoriales bidimensionales, tanto estaticos como animados en formato XML</li>
+                        <li>Esta basado en XML y ofrece muchas ventajas tanto para desarrolladores como para usuarios.</li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        El grupo de trabajo SVG esta trabajando actualmente en paralelo en un conjunto de modulos para extender 
+                        especificacoines anteriores y agregar funcionalidad a CSS, y la nueva especificacion SVG 2 combina esos modulos con el resto del marco SVG. <br>
+                        Se puede utilizar XML y JavaScript para crear graficos web que respondan a las acciones del usuario con efectos sofisticados, como el resaltado, la informacion de 
+                        herramientas, el audio y las animaciones. <br> <br>
+                        <b><ins>Ventajas del formato SVG</ins></b>
+                        <ul>
+                            <li>Crear y editar con cualquier editor de codigo o texto</li>
+                            <li>Imprimir con alta calidad en cualquier resolucion.</li>
+                            <li>Ampliar sin perder calidad de imagen o grafico</li>
+                            <li>Los graficos SVG NO pierden calidad si se amplian o cambian de tamaño</li>
+                            <li>Las imagenes SVG son escalables</li>
+                            <li>SVG es un estandar abierto</li>
+                            <li>SVG es compatible con todos los navegadores modernos para computadoras de escritorio y moviles.</li>
+                            <li>Existen muchas herramientas de creacion SVG, y la exportacion a SVG es compatible con las principales herramientas de creacion de graficos vectoriales.</li>
+                        </ul>
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/svg2.png"><img src="imagenes/svg2.png" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    Es un lenguaje de marcado para describir imagenes y aplicaciones de graficos bidimensionales, fue evolucionando poco a poco en el transcurso del tiempo. <br>
+                    En 2001 fue oficialmente hecho una recomendacion del W3C pero fue la version 1.1. <br>
+                    Actualmente se esta trabajando en el SVG 2 con nuevas caracteristicas de facilidad de uso, ademasa de integracion mas cercana a HTML, CSS y DOM, tambien se 
+                    esta trabajando en caracteristicas obsoletas que no son compatibles con todos los navegadores.
+                </p>
+            </article>
+        </footer>
+    </main>
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="tipografia">Tipografia responsiva</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Lo mas importante es que el texto se pueda leer</li>
+                        <li>Junto con el color, la tipografia puede alterar por completo el significado que asociamos a un proyecto</li>
+                        <li>Estudios concluyen que es un error costoso si el texto es menor a 1px</li>
+                        <li>Es importante no perder de vista el concepto de que los usuarios de la web son tus clientes que de alguna forma
+                            van a consumir los productos y servicios
+                        </li>
+                        
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        El texto es parte imprescindible de la web. Productos, servicios, lo que haces, lo que se quiere lograr con el proyecto web se muestran mediante el texto. 
+                        De nada sirve todo el esfuerzo que se imprima en el proyecto web si las palabras llegan a un lector, que sera tu futuro cliente. Debemos conseguir que el mensaje sea recibido de la mejor 
+                        forma posible. <br> 
+                        Ademas de tomar decisiones de diseño sobre la forma, se debe definir un cuerpo, un tamaño para el texto, como se relaciona unos elementos con otro.
+                        No es exagerado, entonces, pensar que la legibilidad es un factor clave en los beneficios que puedes generar con tu sitio web. Junto con el color, la tipografia puede alterar por completo el significado que 
+                        asociamos a un proyecto. <br>
+                        <b><ins>La legibilidad</ins></b> <br>
+                        Se define como: cualidad de lo que es legible, basicamente es la facilidad con que se puede leer y comprender un texto. En un sentido mas amplio 
+                        es la aptitud de un texto de ser leido facil y comodamente, y esta aptitud en la web hace referencia a la familia tipografica, color y contraste de la tipografia, 
+                        lineas de palabras, parrafos y otros elementos como imagenes, videos, animaciones, etc. <br>
+                        <b><ins>El tamaño de la letra</ins></b> <br>
+                        16px no es un tamaño grande, es tamaño por defecto en muchos navegadores. 16px o 18px deben ser las primeras medidas a probar. Con un consumo de contenido cada vez mayor 
+                        en movil, el tamaño de fuente para movil tambien debe permitir una lectura comoda.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/tipografia.jpg"><img src="imagenes/tipografia.jpg" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen el texto responsivo es importantisimo para el diseño de una pagina web responsiva, debe tener una buena legibilidad, 
+                    que es la propiedad de ser leido facil y comodamente, ademas de que debe cumplir con ciertas reglas de tamaño, por ejemplo debe ser mayor 
+                    a 1px y las primeras medidas a probar deben ser de 16px a 18px.
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="tipografia">Tipografia responsiva PT2</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Debemos definir un ancho para la caja de texto y contar cuantos caracteres entran en funcion del tamaño</li>
+                        <li>La recomendacion es establecer el line-height al 120% (multiplicar por 1.2) el tamaño de texto.</li>
+                        <li>El trabajo con unidades rem requiere de experimentar en diferentes tamaños de fuente reales y ver si 
+                            obtienes el resultado deseado.
+                        </li>
+                        <li>No existe una regla para la combinacion de colores, eso va a depender mucho del proyecto que se este realizando.</li>
+                        
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>Numero de palabras por linea</ins></b> <br>
+                        El ancho de linea es otro factor decisivo. Segun John Kane es un manual de tipografia, el ancho 
+                        de linea optimo contiene entre 35 y 65 caracteres (7-12 palabras aprox.). Aunque estas indicaciones fueron 
+                        sugeridas para papel en un principio, sirven tambien para tener una legibilidad optima en pantalla. <br>
+                        <br>
+                        <b><ins>Combinacion Tipografica</ins></b> <br>
+                        Usar diferentes familias tipograficas te permitira separar e identificar mejor bloques de texto, establecer jerarquias claras, mejorar la legibilidad 
+                        de los textos y, en definitiva, hacer que el usuario se quede mas tiempo en la web. <br>
+                        <br>
+                        <b><ins>El interlineado</ins></b> <br>
+                        En la web el interlineado lo podemos ajustar con la propiedad alto de linea o line height, que es la distancia entre dos lineas. 
+                        No obstante, como casi siempre que trabajamos con letras, tenemos que darle mas importancia al aspecto visual, la apariencia optica, que a los numeros y 
+                        a las matematicas. <br>
+                        <br>
+                        Si nos pasamos de interlineado sera muy dificil de crear continuidad, el lector tendra que hacer un esfuerzo extra para ir de una linea a la siguiente y podra 
+                        perderse.
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/tipografia.jpg"><img src="imagenes/tipografia.jpg" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen el texto responsivo es importantisimo para el diseño de una pagina web responsiva, debe tener una buena legibilidad, 
+                    que es la propiedad de ser leido facil y comodamente, ademas de que debe cumplir con ciertas reglas de tamaño, por ejemplo debe ser mayor 
+                    a 1px y las primeras medidas a probar deben ser de 16px a 18px.
+                </p>
+            </article>
+        </footer>
+    </main>
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="tipografia">Tipografia responsiva PT3</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>Debemos definir un ancho para la caja de texto y contar cuantos caracteres entran en funcion del tamaño</li>
+                        <li>La recomendacion es establecer el line-height al 120% (multiplicar por 1.2) el tamaño de texto.</li>
+                        <li>El trabajo con unidades rem requiere de experimentar en diferentes tamaños de fuente reales y ver si 
+                            obtienes el resultado deseado.
+                        </li>
+                        <li>No existe una regla para la combinacion de colores, eso va a depender mucho del proyecto que se este realizando.</li>
+                        
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <b><ins>Usa unidades REM</ins></b> <br>
+                        El uso de pixeles y ems es algo habitual. Mientras que los px son unidades absolutas, los ems son unidades relativas al elemento padre. <br>
+                        Esto significa que cuando cambia el tamaño del navegador, es dificl calcular el tamaño para lograr el resultado deseado. Es mejor 
+                        opcion usar rems, los rems, tambien conocidos como "bot-ems", son siempre iguales al tamaño de fuente del elemento HTML raiz, ademas de todos 
+                        los navegadores modernos lo admiten. <br>
+                        <b><ins>Unidades REM en media queries</ins></b> <br>
+                        El resultado dependera del tipo de letra. Tambien deberas usara tamaños de fuente reales y ver si obtienes el resultado deseado. Debemos tomar en cuenta
+                        que, en pantallas mas pequeñas, el tamaño de funete sera un poco mas grande en comparacion con las pantallas mas anchas. <br>
+                        <b><ins>El color</ins></b> <br>
+                        Uno de los principales errores que cometen actualmente los disenadores web es emplear combinacoines de colores inecesarias. No se debe 
+                        diseñar web sin criterios acerca del color o utilizando una gran cantidad de colores. Esto solo hara que el texto sea ilegible y causa dolor de ojos a tus visitantes. <br>
+                        El W3C sugiere que se use el contraste adecuado o los colores que hagan que se distinga el texto del fondo. <br>
+                        Si es posible, usa colores FLAT UI. 
+
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/tipografia.jpg"><img src="imagenes/tipografia.jpg" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    En resumen el texto responsivo es importantisimo para el diseño de una pagina web responsiva, debe tener una buena legibilidad, 
+                    que es la propiedad de ser leido facil y comodamente, ademas de que debe cumplir con ciertas reglas de tamaño, por ejemplo debe ser mayor 
+                    a 1px y las primeras medidas a probar deben ser de 16px a 18px.
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+
+    <main>
+        <header>
+            <a href="index.html"><img src="/imagenes/Volver.png" alt=""></a>
+            <h1 id="root"> Propiedades Personalizadas</h1>
+        </header>
+        <nav>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#img">Picture</a>
+            <a href="#svg">SVG</a>
+            <a href="#tipografia">Tipografia</a>
+            <a href="#root">Variables</a>
+        </nav>
+        <section>
+
+            <article class="primer_contenido">
+                <h2>Ideas Clave</h2>
+                <article>
+                    <p>
+                    <ul>
+                        <br> <br>
+                        <li>En la mayoria de los casos, :root se refiere al elemento &#60;html&#62; en una pagina web.</li>
+                        <li>El elemento HTML esta en el nivel 4 de especificidad</li>
+                        <li>La pseudo-clase: root puede ser util para declarar variables CSS globales</li>
+                        <li>Las propiedades personalizadas heredan. Lo que significa que si no se establece ningun valor para 
+                            una propiedad personalizada en un elemento dado se utiliza el valor de su elemento padre.
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+            </article>
+
+            <article class="segundo_contenido">
+                <h2>Apuntes</h2>
+                <article>
+                    <p>
+                        <ins><b>:root</b></ins> <br>
+                        El selector :root coincide con el elemento raiz del documento. En HTML, el elemento raiz es siempre el elemento html, la Sintaxis
+                        es la siguiente: :root{ propiedad:valor;} <br>
+                        Tambien se puede usar con otros formatos de documentos, como SVG y XML, pseudo-clase :root siempre selecciona el elemento superior del documento. <br>
+                        <br>
+                        Si bien la pseudo-clase :root y el selector html representan a los mismos elementos HTML, es util saber que:root tiene una mayor especificidad (nivel 3). <br>
+                        <b><ins>Variables CSS</ins></b> <br>
+                        En CSS, las propiedades personalizadas (tambien conocidads como variables) son entidades que contienen valores especificos que 
+                        se pueden volver a utilizar en un documento. Los sitios web complejos tienen cantidades muy grandes de CSS, a menudo con una gran cantidad de valores repetidos.
+                        Las variables CSS permiten que un valor se almacene en un lugar y luego se hace referencia en varios otros lugares. Se declaran con la sintaxis siguiente: --nombre: valor; y se 
+                        invocan mediante la funcion var(), por ejemplo: Propiedad: var(--nombre);
+                    </p>
+                </article>
+                <figure class="imagen">
+                    <a href="imagenes/root.jpg"><img src="imagenes/root.jpg" alt=""></a>
+                </figure>
+        </section>
+        <footer>
+            <h2>Resumen</h2>
+            <article>
+                <p>
+                    El selector root coincide con el elemento raiz del documento que en HTML siempre es el elemento html, sin embargo, como se puede 
+                    usar con otros formatos de documentos como SVG y XML entonces puede variar,  mas siempre va a ser el elemento superior del documento. <br>
+                    Con las variables CSS nos podemos librar de repetir muchas veces la misma propiedad definiendo una variable que guarde esa propiedad con la 
+                    siguiente sintaxis: --nombre: valor; y se llaman con la funcion var(), asi: Propiedad: var(--nombre);
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    
